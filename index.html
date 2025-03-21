@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Digital | Impulsa tu negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-900">
+
+    <!--  Hero Section -->
+    <header class="bg-blue-600 text-white py-8 px-6 flex justify-between items-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold">¡Impulsa tu marca y atrae más clientes con 10 estrategias de marketing efectivas!</h1>
+          <!--  Logo en la esquina superior derecha -->
+    <img src="images/logo1 .png" alt="Logo de la empresa" class="w-64 md:w-72 lg:w-80">
+</header>
+    </header>
+
+    <!--  Beneficios -->
+    <section class="py-12 text-center px-6">
+        <h2 class="text-3xl font-bold text-gray-800 leading-snug">Descubre las claves para atraer más clientes y aumentar tus ventas.</h2>
+        <div class="flex flex-wrap justify-center mt-8 gap-6">
+            <div class="bg-white p-6 shadow-lg rounded-xl w-72 transition hover:scale-105">
+                <h3 class="font-bold text-lg text-blue-600">SEO Optimizado</h3>
+                <p class="text-gray-600 mt-2">Mejoramos tu posición en Google.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-xl w-72 transition hover:scale-105">
+                <h3 class="font-bold text-lg text-blue-600">Publicidad Eficiente</h3>
+                <p class="text-gray-600 mt-2">Campañas en Facebook e Instagram.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-xl w-72 transition hover:scale-105">
+                <h3 class="font-bold text-lg text-blue-600">Análisis de Datos</h3>
+                <p class="text-gray-600 mt-2">Optimización con Power BI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  Ebook gratis -->
+     
+    <section class="bg-white py-12 text-center px-6 shadow-md">
+        <h2 class="text-3xl font-bold text-gray-800">Obtén tu eBook gratis</h2>
+        <p class="mt-4 text-gray-600 max-w-xl mx-auto">Este ebook te dará las estrategias clave para atraer más clientes sin grandes inversiones.</p>
+        <div class="mt-6">
+            <a href="#contacto" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg text-lg hover:bg-blue-700 transition">
+                📥 Obtener eBook Gratis
+            </a>
+        </div>
+        <div class="mt-6">
+            <img src="images/Ebook-Desbloquea.png" class="w-64 md:w-80 mx-auto shadow-lg rounded-lg">
+        </div>
+        
+
+    <!--  Formulario de contacto -->
+    <section id="contacto" class="py-12 bg-gray-100 flex justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-2xl font-bold text-center text-blue-700 mb-6">Descarga tu eBook</h2>
+            <form id="formulario" action="guardar_excel.php" method="POST" class="space-y-4">
+                <div>
+                    <label for="nombre" class="block text-gray-600 font-semibold mb-1">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 outline-none">
+                </div>
+                <div>
+                    <label for="correo" class="block text-gray-600 font-semibold mb-1">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 outline-none">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition-all">
+                    Enviar y Obtener eBook
+                </button>
+            </form>
+            <p class="mt-4 text-center text-gray-500 text-sm">🔒 No te preocupes, no enviamos spam.</p>
+        </div>
+    </section>
+
+    <!--  Frase de urgencia -->
+    <div class="text-center mt-12 mb-16 px-6">
+        <p class="text-red-600 font-bold text-xl">🚀 Más de 1,000 emprendedores ya han descargado este eBook. ¿Serás el próximo?</p>
+        <div class="mt-4">
+            <a href="#contacto" class="bg-green-600 text-white py-3 px-6 rounded-lg font-semibold text-lg hover:bg-green-700 transition">
+                📥 Descargar mi eBook gratis
+            </a>
+        </div>
+    </div>
+
+    <!-- Testimonios -->
+    <section class="bg-gray-200 py-12 text-center px-6">
+        <h2 class="text-3xl font-bold text-gray-800">Testimonios</h2>
+        <div class="mt-6 max-w-lg mx-auto bg-white p-6 shadow-lg rounded-lg">
+            <img src="images/andrea.png" class="w-20 h-20 mx-auto rounded-full mb-4">
+            <p class="text-lg italic text-gray-700">"Este ebook cambió la forma en que promociono mi marca. Aplicar estas estrategias me permitió ganar más visibilidad y duplicar mi audiencia en solo un mes."</p>
+            <p class="mt-4 font-semibold text-blue-600">- Andrea López, Emprendedora de Bogotá.</p>
+        </div>
+        <div class="mt-6 max-w-lg mx-auto bg-white p-6 shadow-lg rounded-lg">
+            <img src="images/carlos.png" class="w-20 h-20 mx-auto rounded-full mb-4">
+            <p class="text-lg italic text-gray-700">"Gracias a estas estrategias, finalmente logré diferenciarme de la competencia y atraer a más clientes interesados en mis productos."</p>
+            <p class="mt-4 font-semibold text-blue-600">- Carlos Torres, Fundador de EcoSostenible.</p>
+        </div>
+        <div class="mt-6 max-w-lg mx-auto bg-white p-6 shadow-lg rounded-lg">
+            <img src="images/carla.png" class="w-20 h-20 mx-auto rounded-full mb-4">
+            <p class="text-lg italic text-gray-700">“Gracias al e-book 'Desbloquea el poder de tu Marca', pude identificar estrategias clave para aumentar la visibilidad de mi café. Implementé varias de las recomendaciones y noté un incremento en el flujo de clientes y en las interacciones en redes sociales. ¡Sin duda, un recurso valioso para cualquier emprendedor!"</p>
+            <p class="mt-4 font-semibold text-blue-600">- Carla Méndez, Dueña de "Café Sabor Natural"</p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 px-6 mt-12">
+        <p>&copy; 2025 Marketing Digital. Todos los derechos reservados.</p>
+        <div class="mt-4 flex justify-center gap-6">
+            <a href="#" class="text-white text-2xl hover:text-blue-400 transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white text-2xl hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white text-2xl hover:text-blue-300 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white text-2xl hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
